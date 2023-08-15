@@ -1,0 +1,24 @@
+<div *ngIf="dataLoaded">
+  <div class="product-details">
+    <h1>{{ productDetails?.productName }}</h1>
+     <p>Category: {{ productDetails?.categoryName }}</p>
+    <p>Brand: {{ productDetails?.brandName }}</p>
+    <p>Color: {{ productDetails?.colorName }}</p>
+    <p>Price: {{ productDetails?.unitPrice }}</p>
+    <p>Description: {{ productDetails?.description }}</p>
+  </div>
+
+  <div class="product-images">
+    <h3>Images</h3>
+    <div *ngFor="let imagePath of productDetails?.imagePath">
+      <img [src]="imageUrl + imagePath" alt="Product Image">
+    </div>
+  </div>
+
+  <div class="product-sizes">
+    <h3>Sizes</h3>
+    <div *ngFor="let sizenumber of productDetails">
+      <p>{{ sizenumber }}</p>
+    </div>
+</div>
+</div>

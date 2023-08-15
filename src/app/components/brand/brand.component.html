@@ -1,0 +1,12 @@
+<div *ngIf="dataLoaded">
+    <h2>Brands</h2>
+    <ul>
+      <li *ngFor="let brand of brands">
+        {{ brand.brandName }}
+      </li>
+    </ul>
+  </div>
+  
+  <div *ngIf="!dataLoaded">
+    <p>Loading brands...</p>
+  </div>

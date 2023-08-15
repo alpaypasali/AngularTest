@@ -1,0 +1,28 @@
+.product-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .product-list li {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .product-list li:last-child {
+    border-bottom: none;
+  }
+  
+  .product-title {
+    color: #333;
+    font-size: 1.2em;
+  }
+  
+  .product-name, .product-price {
+    color: #666;
+    font-size: 1em;
+  }
+  .carousel-image {
+    width: 1120px;
+    height: 300px;
+  }
+  

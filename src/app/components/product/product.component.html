@@ -1,0 +1,52 @@
+<app-shared></app-shared>
+<div class="mb-3">
+  <label for="filterText" class="form-label">Ürün Ara</label>
+  <input type="text" [(ngModel)]="filterText"  class="form-control" id="filterText" placeholder="arama ifadesi giriniz">
+</div>
+<div *ngIf="filterText" class="alert aler-light">
+
+{{filterText}} aradiniz
+</div>
+
+
+
+<div *ngIf="dataLoaded!=false" class="container">
+
+  <div class="row ">
+
+    <div *ngFor="let carDetails of productDetails" class="col-md-4">
+
+     
+
+        <img *ngIf="carDetails.imagePath"
+         routerLink="/cars/cardetail/{{ carDetails.productId }}" 
+
+         [src]="carDetails.imagePath.length !== 0 ? imageUrl+carDetails.imagePath[0] : imageUrl + 'DefaultImage.jpg'"
+          style="object-fit: cover;"  class="card-img-top" alt="...">
+
+         <div class="card-body">
+
+          <h5 class="card-title">{{carDetails.brandName}} {{carDetails.productName}}</h5>
+
+
+        </div>
+
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Brand:{{carDetails.brandName}}</li>
+
+          <li class="list-group-item">Color:{{carDetails.colorName}}</li>
+       
+          <li class="list-group-item">Description:{{carDetails.description}}</li>
+      
+        </ul>
+
+        <div class="card-body">
+          <button routerLink="/products/details/{{ carDetails.productId }}"   type="button" class="btn btn-primary">Details</button>
+          
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+

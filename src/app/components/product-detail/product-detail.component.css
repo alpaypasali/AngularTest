@@ -1,0 +1,117 @@
+.product-detail {
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .product-detail h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .product-detail p {
+    margin: 10px 0;
+  }
+  
+  .product-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .product-images img {
+    width: calc((100% - 20px) / 2);
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  body{
+    background-color:#dce3f0;
+}
+
+.height{
+    
+    height:100vh;
+}
+
+.card{
+    
+    width:350px;
+    height:370px;
+}
+
+.image{
+    position:absolute;
+    right:12px;
+    top:10px;
+}
+
+.main-heading{
+    
+    font-size:40px;
+    color:red !important;
+}
+
+.ratings i{
+    
+    color:orange;
+    
+}
+
+.user-ratings h6{
+    margin-top:2px;
+}
+
+.colors{
+    display:flex;
+    margin-top:2px;
+}
+
+.colors span{
+    width:15px;
+    height:15px;
+    border-radius:50%;
+    cursor:pointer;
+    display:flex;
+    margin-right:6px;
+}
+
+.colors span:nth-child(1) {
+    
+    background-color:red;
+    
+}
+
+.colors span:nth-child(2) {
+    
+    background-color:blue;
+    
+}
+
+.colors span:nth-child(3) {
+    
+    background-color:yellow;
+    
+}
+
+.colors span:nth-child(4) {
+    
+    background-color:purple;
+    
+}
+
+.btn-danger{
+    
+    height:48px;
+    font-size:18px;
+}
+
+
+
+body{background-color: #000}.card{border:none}.product{background-color: #eee}.brand{font-size: 13px}.act-price{color:red;font-weight: 700}.dis-price{text-decoration: line-through}.about{font-size: 14px}.color{margin-bottom:10px}label.radio{cursor: pointer}label.radio input{position: absolute;top: 0;left: 0;visibility: hidden;pointer-events: none}label.radio span{padding: 2px 9px;border: 2px solid #ff0000;display: inline-block;color: #ff0000;border-radius: 3px;text-transform: uppercase}label.radio input:checked+span{border-color: #ff0000;background-color: #ff0000;color: #fff}.btn-danger{background-color: #ff0000 !important;border-color: #ff0000 !important}.btn-danger:hover{background-color: #da0606 !important;border-color: #da0606 !important}.btn-danger:focus{box-shadow: none}.cart i{margin-right: 10px}
